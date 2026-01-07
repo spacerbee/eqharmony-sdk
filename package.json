@@ -1,0 +1,22 @@
+{
+    "name": "eqharmony-sdk",
+    "version": "0.0.1",
+    "description": "EqHarmony SDK",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "npm run build --workspaces",
+        "clean": "npm run clean --workspaces",
+        "test": "npm run test --workspaces",
+        "lint": "npm run lint --workspaces"
+    },
+    "devDependencies": {
+        "typescript": "^5.3.3"
+    },
+    "engines": {
+        "node": ">=20",
+        "npm": ">=9"
+    }
+}

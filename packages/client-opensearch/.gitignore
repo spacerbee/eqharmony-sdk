@@ -1,0 +1,60 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files, which are likely to contain sensitive data
+*.tfvars
+*.tfvars.json
+
+# Ignore override files as they are usually used for local development
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore lock files
+.terraform.lock.hcl
+
+# Ignore Mac OS system files
+.DS_Store
+
+# CDKTF generated files
+.gen/
+cdktf.out/
+
+# Generated code
+dist/
+node_modules/
+
+# Compiled TypeScript files in src
+src/**/*.js
+src/**/*.d.ts
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.development
+.env.test
+.env.production
+
+# Lambda zip files
+lambda.zip
+lambda-*.zip
+
+# Build artifacts
+*.zip
+*.tar.gz
