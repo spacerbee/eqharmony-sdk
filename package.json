@@ -7,13 +7,17 @@
         "packages/*"
     ],
     "scripts": {
-        "build": "npm run build --workspaces",
-        "clean": "npm run clean --workspaces",
-        "test": "npm run test --workspaces",
-        "lint": "npm run lint --workspaces"
+        "build": "npm -ws run build",
+        "clean": "npm -ws run clean",
+        "test": "npm -ws run test",
+        "lint": "npm -ws run lint",
+        "changeset": "changeset",
+        "version-packages": "changeset version",
+        "release": "changeset publish"
     },
     "devDependencies": {
-        "typescript": "^5.3.3"
+        "typescript": "^5.3.3",
+        "ts-node": "^10.9.2"
     },
     "engines": {
         "node": ">=20",
